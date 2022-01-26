@@ -1,3 +1,24 @@
+/*Description
+
+Suppose two ascending sorted arrays are given. These two arrays are merged into one. Find a median of the obtained array.
+By definition, a median of the array with ascending numbers that contains n elements is the (int(n/2)+1)-st element.
+For example, the median of the array {1, 2, 3, 4, 5} is 3, the median of {1, 2, 3, 4, 5, 6} is 4.
+
+Input
+     1. Quantity n_1 of the members in the first array, a positive integer.
+     2. Four positive integers S_1, A_1, B_1, M_1. Using numbers S_1, A_1, B_1, M_1, the following pseudocode will generate the first array.
+X_1[0] = S_1
+for i = 1 to n_1-1:
+S_1 = (A_1 * S_1 + B_1) mod M_1
+X_1[i] = X_1[i-1] + S_1
+     3. Quantity n_2  of the members in the second array, a positive integer.
+     4. Four positive integers S_2, A_2, B_2, M_2. Using numbers S_2, A_2, B_2, M_2, the following pseudocode will generate the second array.
+X_2[0] = S_2
+for i = 1 to n_2-1:
+S_2 = (A_2 * S_2 + B_2) mod M_2
+ X_2[i] = X_2[i-1] + S_2
+*/
+
 #include <iostream>
 #include <vector>
 
